@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Mi primera secci\IeC {\'o}n}{7}{0}{1}
+\beamer@sectionintoc {2}{Mi segunda secci\IeC {\'o}n}{8}{0}{2}
+\beamer@sectionintoc {3}{Mi tercera secci\IeC {\'o}n}{12}{0}{3}
+\beamer@sectionintoc {4}{Mi cuarta secci\IeC {\'o}n}{18}{0}{4}
+\beamer@sectionintoc {5}{Bibliograf\IeC {\'\i }a}{19}{0}{5}

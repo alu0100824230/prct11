@@ -1,0 +1,92 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title[Práctica 11]{Número PI}
+\author[Cathaysa]{Cathaysa Pérez Quintero}
+\date[23.04.14]{23 de Abril de 2014}
+
+\usetheme{Madrid}
+
+\definecolor{pantone254}{RGB}{122,59,122}
+\definecolor{pantone3015}{RGB}{0,88,147}
+\definecolor{pantone432}{RGB}{56,61,66}
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=pantone254}
+\setbeamercolor*{palette secondary}{use=structure, fg=white, bg=pantone3015}
+\setbeamercolor*{palette tertiary}{use=structure, fg=white, bg=pantone432}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Índice}
+\tableofcontents[pausesections]
+\end{frame}
+
+\section{Mi primera sección}
+\begin{frame}
+\frametitle{Introducción}
+A lo largo de la historia han sido muchas las formas utilizadas por el
+ser humano para calcular aproximaciones cada vez más exactas del número $\pi$.\\
+El objetivo de esta práctica de laboratorio es implementar el código \textsf{Python}
+que permita a\-pro\-xi\-mar el número $\pi$ con una cierta precisión.\\
+$\pi$ se puede calcular mediante integración:
+
+$$\int_{0}^{1} \! \frac{4}{1+x^2}\, dx = 4(atan(1) -atan(0)) = \pi $$
+
+Esta integral se puede aproximar numéricamente con una fórmula de cuadratura.
+\end{frame}
+
+\section{Mi segunda sección}
+\begin{frame}
+\frametitle{Regla del punto medio}
+Si se utiliza la regla del punto medio se obtiene:\pause
+\begin{center}
+$ \pi \approx \frac{1}{n} \sum\limits_{i=1}^{n}f(x_i)\,$,\pause
+
+con $f(x) = \frac{4}{(1+x^2)}\,$\pause
+
+y $x_i = \frac{i - \frac{1}{2}}{n}$, para $i = 1, \dots, n$
+\end{center}
+\end{frame}
+\section{Mi tercera sección}
+\begin{frame}
+\frametitle{Ejercicio para resolver}
+Escriba un programa que reciba como entrada el número de subintervalos
+con los que se desea abordar la aproximación del número $\pi$.\\
+
+A partir de él se deben calcular y mostrar por la consola:\pause
+\begin{itemize}
+  \item Los extremos de los subintervalos.\pause
+  \item El punto $x_i$.\pause
+  \item El valor de de la función de aproximación de $pi$, $f(x_i)$.\pause
+  \item El resultado de la aproximación.\pause
+  \item La constante $pi$ con treinta y cinco decimales.
+\end{itemize}
+\end{frame}
+\section{Mi cuarta sección}
+\begin{frame}
+\frametitle{Fórmula útil}
+Una fórmula que puede ser útil es:
+\begin{center}
+$x=\frac{a_2 x^2 + a_1 x + a_0}{1+2z^3}, \quad x+y^{2n+2}=\sqrt{b^2-4ac}$
+\end{center}
+\end{frame}
+
+\section{Bibliografía}
+\begin{frame}
+\frametitle{Bibliografía}
+\begin{thebibliography}
+\beamertermplatebookbibitems
+\bibitem[Guía Docente,2013]{guia}
+  Guía Docente. (Año 2013)
+  {\small $http://www.ull.es$}
+\bibitem[Apuntes Aula Virtual]{guia}
+  Apuntes Aula Virtual. Matemáticas (2014)
+  {\small $http://www.campusvirtual.ull.es$}
+\end{thebibliography}
+\end{frame}
+\end{document}
